@@ -1,7 +1,6 @@
 import { X, MapPin, Users, Maximize, Star, Check, ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
 import type { Venue } from '../types';
 import { useState } from 'react';
-import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 
 interface VenueDetailProps {
   venue: Venue;
@@ -47,11 +46,11 @@ export function VenueDetail({ venue, onClose, onBooking }: VenueDetailProps) {
         <div className="relative">
           {/* Image Carousel */}
           <div className="relative h-96 bg-slate-900">
-            <ImageWithFallback
-              src={venue.images[currentImageIndex]}
-              alt={venue.name}
-              className="w-full h-full object-cover"
-            />
+            <img
+  src={venue.images[currentImageIndex]}
+  alt={venue.name}
+  className="w-full h-full object-cover rounded-xl"
+/>
             
             {/* Image Navigation */}
             {venue.images.length > 1 && (

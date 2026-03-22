@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   Building2, 
   Star, 
@@ -7,7 +7,6 @@ import {
   Phone, 
   Mail, 
   Calendar,
-  Users,
   Award,
   Heart,
   ChevronDown,
